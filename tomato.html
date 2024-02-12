@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="font-serif bg-[#62acb4]">
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 flex items-center justify-between flex-wrap bg-[#f3f4f6] p-6">
+        <div class="flex items-center flex-shrink-0 text-[#f9ac34] mr-6">
+            <img src="./img/logo.png" alt="logo" class="h-20 w-30 mr-2">
+        </div>
+        <div class="block lg:hidden">
+            <button id="menu-button"
+                class="flex items-center px-3 py-2 border rounded text-#f3f4f6 border-[#f9ac34] hover:text-[#f9ac34] hover:border-[#f9ac34]">
+                <svg id="menu-icon" class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v15z" />
+                </svg>
+            </button>
+        </div>
+        <div id="menu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden lg:justify-end space-x-4">
+            <div class="text-sm lg:flex-grow lg:flex lg:justify-end space-x-8">
+                <a href="./index.html"
+                    class="block mt-4 lg:inline-block lg:mt-0 text-#f3f4f6 hover:text-[#62acb4] ml-8">
+                    HOME
+                </a>
+                <a href="./about.html"
+                    class="block mt-4 lg:inline-block lg:mt-0 text-#f3f4f6 hover:text-[#62acb4] mr-4">
+                    ABOUT
+                </a>
+                <a href="./products.html"
+                    class="block mt-4 lg:inline-block lg:mt-0 text-#f3f4f6 hover:text-[#62acb4] mr-4">
+                    PRODUCTS
+                </a>
+                <a href="#blogs" class="block mt-4 lg:inline-block lg:mt-0 text-#f3f4f6 hover:text-[#62acb4] mr-4">
+                    BLOGS
+                </a>
+                <a href="./contact.html"
+                    class="block mt-4 lg:inline-block lg:mt-0 text-#f3f4f6 hover:text-[#62acb4] mr-4">
+                    CONTACT
+                </a>
+                <a href="./locations.html"
+                    class="block mt-4 lg:inline-block lg:mt-0 text-#f3f4f6 hover:text-[#62acb4] mr-4">
+                    LOCATIONS
+                </a>
+            </div>
+            <!-- <div>
+                <a href="./cart.html" class="block mt-4 lg:inline-block lg:mt-0 text-#f3f4f6 hover:bg-[#62acb4] ml-4 w-8">
+                    <img src="./img/cart.png">
+                </a>
+            </div> -->
+        </div>
+    </nav>
+
+    <main>
+        <article>
+            <section class="m-8 p-4 bg-#f3f4f6 rounded shadow-lg">
+                <div class="flex flex-col md:flex-row bg-[#f3f4f6] p-4 rounded">
+                    <div class="w-full md:w-1/2 p-8 rounded">
+                        <img class="object-cover object-center rounded w-full h-64 md:h-auto" alt="hero"
+                            src="./img/homebg3.jpg">
+                    </div>
+                    <div class="flex flex-col w-full md:w-1/2 mt-4 md:mt-0 md:pl-8 py-8 text-left">
+                        <h1 class="sm:text-3xl text-2xl text-center font-medium title-font mb-2 text-gray-900 px-8">
+                            Tomato</h1>
+                        <div class="w-16 border-b-2 border-black mx-auto my-2"></div>
+                        <p class="lg:w-2/3 mx-auto leading-relaxed text-lg text-gray-700">Fresh and high-quality
+                            tomatoes straight from our
+                            farm to your kitchen.</p>
+                        <p class="lg:w-2/3 mx-auto leading-relaxed text-lg text-gray-700">Price: <span
+                                id="price">₹100/kg</span></p>
+                        <div class="lg:w-2/3 mx-auto my-4">
+                            <label for="quantity" class="text-lg">Quantity (in kg): </label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="100" step="1" value="1"
+                                class="text-lg">
+                        </div>
+                        <div class="lg:w-2/3 mx-auto my-4">
+                            <button
+                                class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded text-lg">Buy
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- footer -->
+            <footer class="bg-beige text-#f3f4f6 p-6 text-center bg-[#f3f4f6]">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div>
+                        <h2 class="font-bold mb-2">CONTACT US</h2>
+                        <p><i class="fas fa-phone"></i> 91-9137701291</p>
+                        <p><i class="fas fa-envelope"></i> panchalswaraj13@gmail.com</p>
+                    </div>
+                    <div>
+                        <h2 class="font-bold mb-2">INFORMATION</h2>
+                        <ul>
+                            <a href="./about.html">
+                                <li>About Us</li>
+                            </a>
+                            <a href="./products.html">
+                                <li>Our Products</li>
+                            </a>
+                            <a href="./blogs.html">
+                                <li>Blogs</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="font-bold mb-2">SOCIAL MEDIA</h2>
+                        <a href="">
+                            <p><i class="fab fa-instagram"></i> Instagram</p>
+                        </a>
+                    </div>
+                    <div>
+                        <h2 class="font-bold mb-2">CUSTOMER SERVICE</h2>
+                        <ul>
+                            <a href="./contact.html">
+                                <li>Contact Us</li>
+                            </a>
+                            <a href="./locations.html">
+                                <li>Locations</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <p>Powered By Swaraj Panchal © 2024</p>
+                </div>
+            </footer>
+        </article>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
