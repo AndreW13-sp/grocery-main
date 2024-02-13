@@ -54,3 +54,17 @@ setInterval(nextSlide, 5000); // Change slide every 5 seconds
 //     zoom: 8,
 //   });
 // }
+
+// Get the quantity input and price element
+var quantityInput = document.getElementById('quantity');
+var priceElement = document.getElementById('price');
+
+// Listen for changes on the quantity input
+quantityInput.addEventListener('input', function() {
+    // Calculate the new price
+    var pricePerKg = 100; // Set your price per kg here
+    var newPrice = quantityInput.value * pricePerKg;
+
+    // Update the price element
+    priceElement.textContent = '₹' + newPrice + '/kg';
+});

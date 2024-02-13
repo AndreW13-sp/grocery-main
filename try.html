@@ -43,68 +43,40 @@
                     </div>
                 </div>
  -->
+<!-- 
+    Product Details Section
+    <section class="m-8 p-4 bg-gray-200 rounded shadow-lg" x-data="{ quantity: 1, price: 100 }">
+                <div class="flex flex-col md:flex-row bg-gray-200 p-4 rounded">
+                    <div class="w-full md:w-1/2 p-8 rounded">
+                        <img class="object-cover object-center rounded w-full h-64 md:h-auto" alt="hero"
+                            src="./img/homebg3.jpg">
+                    </div>
+                    <div class="flex flex-col w-full md:w-1/2 mt-4 md:mt-0 md:pl-8 py-8 text-left">
+                        <h1 class="sm:text-4xl text-2xl text-center font-medium title-font mb-2 text-gray-900 pt-4 px-8">
+                            Tomato</h1>
+                        <div class="w-16 border-b-2 border-black mx-auto my-2"></div>
+                        <p class="lg:w-2/3 mx-auto leading-relaxed text-lg text-gray-700 pt-4">Fresh and high-quality
+                            tomatoes straight
+                            from our farm to your kitchen.</p>
+                        <p class="lg:w-2/3 mx-auto leading-relaxed text-lg text-gray-700 pt-4">Price: ₹ <span
+                                x-text="price * quantity"></span></p>
+                        <div class="lg:w-2/3 mx-auto my-4">
+                            <label for="quantity" class="text-lg">Quantity (in kg):</label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="100" step="1"
+                                x-model="quantity" class="text-lg p-1">
+                        </div>
+                        <div class="lg:w-2/3 mx-auto my-4">
+                            <button
+                                class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded text-lg">Buy
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+ -->
 
 container mx-auto bg-[#f3f4f6] w-full rounded-md shadow-md p-8 m-8 relative
 
-<!-- Testimonials -->
-<section x-data="{ currentIndex: 0 }" class="flex w-full p-8">
-    <div class="container mx-auto bg-[#f3f4f6] w-full md:w-3/4 rounded-md shadow-md p-8 m-8 relative">
-        <h1 class="text-center text-2xl md:text-4xl lg:text-5xl p-4 align-center">Testimonials</h1>
-        <div class="w-16 border-b-2 border-black mx-auto my-2"></div>
-        <div class="flex flex-col md:flex-row justify-center pb-4">
-            <!-- Testimonials -->
-            <div x-show="currentIndex === 0" class="testimonial flex flex-wrap justify-around">
-                <!-- Quality Products -->
-                <div class="flex flex-col items-center m-4 md:m-8 mb-4 md:mb-0">
-                    <img src="./img/s.png" alt="Quality Products Icon" class="w-18 h-16 mb-2">
-                    <h2 class="text-lg md:text-xl font-semibold mb-2">Quality Products</h2>
-                    <p class="text-gray-600 text-sm md:text-md">Grocery store offers a wide range of high-quality
-                        products that are
-                        fresh and reliable.</p>
-                </div>
-
-                <!-- Multiple Quality Checks -->
-                <div class="flex flex-col items-center m-4 md:m-8 mb-4 md:mb-0">
-                    <img src="./img/j.png" alt="Multiple Quality Checks Icon" class="w-18 h-16 mb-2">
-                    <h2 class="text-lg md:text-xl font-semibold mb-2">Multiple Quality Checks</h2>
-                    <p class="text-gray-600 text-sm md:text-md">Products go through multiple quality checks to ensure
-                        you get the best.
-                    </p>
-                </div>
-            </div>
-            <div x-show="currentIndex === 1" class="testimonial flex flex-wrap justify-around">
-                <!-- Fast Delivery -->
-                <div class="flex flex-col items-center m-4 md:m-8 mb-4 md:mb-0">
-                    <img src="./img/v.png" alt="Fast Delivery Icon" class="w-18 h-16 mb-2">
-                    <h2 class="text-lg md:text-xl font-semibold mb-2">Fast Delivery</h2>
-                    <p class="text-gray-600 text-sm md:text-md">We ensure fast delivery so your groceries arrive at your
-                        doorstep
-                        in no time.
-                    </p>
-                </div>
-
-                <!-- Excellent Customer Service -->
-                <div class="flex flex-col items-center m-4 md:m-8 mb-4 md:mb-0">
-                    <img src="./img/m.png" alt="Excellent Customer Service Icon" class="w-18 h-16 mb-2">
-                    <h2 class="text-lg md:text-xl font-semibold mb-2">Excellent Customer Service</h2>
-                    <p class="text-gray-600 text-sm md:text-md">Our customer service team is always ready to help you
-                        with your
-                        needs.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Dots Navigation -->
-        <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex space-x-2 p-4">
-            <button @click="currentIndex = 0"
-                :class="{ 'bg-gray-400': currentIndex !== 0, 'bg-black': currentIndex === 0 }"
-                class="w-3 h-3 rounded-full"></button>
-            <button @click="currentIndex = 1"
-                :class="{ 'bg-gray-400': currentIndex !== 1, 'bg-black': currentIndex === 1 }"
-                class="w-3 h-3 rounded-full"></button>
-        </div>
-    </div>
-</section>
 https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15091.779606431786!2d72.83972014999999!3d18.9780406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1707680117662!5m2!1sen!2sin
 
 <nav x-data="{ scrollDirection: '', lastScroll: 0 }"
