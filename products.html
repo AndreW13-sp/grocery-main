@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body class="font-serif h-[100vh] bg-[#62acb4]">
+<body class="font-serif h-[100vh] bg-[#f2d8bf]">
     <!-- Navbar -->
-    <nav class="sticky top-0 z-50 flex items-center justify-between flex-wrap bg-[#f3f4f6] p-6">
+    <nav class="sticky top-0 z-50 flex items-center justify-between flex-wrap bg-[#e4e7eb] p-6">
         <div class="flex items-center flex-shrink-0 text-[#62acb4] mr-6">
             <img src="./img/logo.png" alt="logo" class="h-20 w-30 mr-2">
         </div>
@@ -63,7 +63,7 @@
     <main>
         <article>
             <!-- Products Section -->
-            <section x-data="{ showCategories: false, showNewContent: true }">
+            <section x-data="{ showCategories: false, showNewContent: true }" class="mb-[-80px]">
                 <div class="flex justify-between items-center">
                     <div></div>
                     <h1 class="text-center text-4xl md:text-5xl p-4 pt-12 align-center sm:pl-[4em]">
@@ -80,45 +80,45 @@
                     x-transition:leave="transition ease-in duration-500" x-transition:leave-start="transform opacity-100 scale-100"
                     x-transition:leave-end="transform opacity-0 scale-95">
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 p-8 m-8">
-                        <div class="bg-gray-100 p-4 rounded-lg">
+                        <div x-data @click="window.location.href = './tomato.html'" class="bg-[#e4e7eb] p-4 rounded-lg hover:cursor-pointer">
                             <img src="./img/homebg3.jpg" alt="Petticoat">
-                            <p>Ladies Wear</p>
-                            <span class="text-sm text-gray-500">$20</span>
+                            <p class="pt-4">TOMATOS</p>
+                            <span class="text-md text-gray-500">₹ 100</span>
                         </div>
-                        <div class="bg-gray-100 p-4 rounded-lg">
+                        <div x-data @click="window.location.href = './tomato.html'" class="bg-[#e4e7eb] p-4 rounded-lg hover:cursor-pointer">
                             <img src="./img/homebg3.jpg" alt="Petticoat">
-                            <p>Girls Jacket</p>
-                            <span class="text-sm text-gray-500">$20</span>
+                            <p class="pt-4">TOMATOS</p>
+                            <span class="text-md text-gray-500">₹ 100</span>
                         </div>
-                        <div class="bg-gray-100 p-4 rounded-lg">
+                        <div x-data @click="window.location.href = './tomato.html'" class="bg-[#e4e7eb] p-4 rounded-lg hover:cursor-pointer">
                             <img src="./img/homebg3.jpg" alt="Petticoat">
-                            <p>Designer Blouse</p>
-                            <span class="text-sm text-gray-500">$20</span>
+                            <p class="pt-4">TOMATOS</p>
+                            <span class="text-md text-gray-500">₹ 100</span>
                         </div>
-                        <div class="bg-gray-100 p-4 rounded-lg">
+                        <div x-data @click="window.location.href = './tomato.html'" class="bg-[#e4e7eb] p-4 rounded-lg hover:cursor-pointer">
                             <img src="./img/homebg3.jpg" alt="Petticoat">
-                            <p>Ladies Panty</p>
-                            <span class="text-sm text-gray-500">$20</span>
+                            <p class="pt-4">TOMATOS</p>
+                            <span class="text-md text-gray-500">₹ 100</span>
                         </div>
-                        <div class="bg-gray-100 p-4 rounded-lg">
+                        <div x-data @click="window.location.href = './tomato.html'" class="bg-[#e4e7eb] p-4 rounded-lg hover:cursor-pointer">
                             <img src="./img/homebg3.jpg" alt="Petticoat">
-                            <p>Ladies Salwar Suit</p>
-                            <span class="text-sm text-gray-500">$20</span>
+                            <p class="pt-4">TOMATOS</p>
+                            <span class="text-md text-gray-500">₹ 100</span>
                         </div>
-                        <div class="bg-gray-100 p-4 rounded-lg">
+                        <div x-data @click="window.location.href = './tomato.html'" class="bg-[#e4e7eb] p-4 rounded-lg hover:cursor-pointer">
                             <img src="./img/homebg3.jpg" alt="Petticoat">
-                            <p>Ladies Shirt</p>
-                            <span class="text-sm text-gray-500">$20</span>
+                            <p class="pt-4">TOMATOS</p>
+                            <span class="text-md text-gray-500">₹ 100</span>
                         </div>
-                        <div class="bg-gray-100 p-4 rounded-lg">
+                        <div x-data @click="window.location.href = './tomato.html'" class="bg-[#e4e7eb] p-4 rounded-lg hover:cursor-pointer">
                             <img src="./img/homebg3.jpg" alt="Petticoat">
-                            <p>Petticoat</p>
-                            <span class="text-sm text-gray-500">$20</span>
+                            <p class="pt-4">TOMATOS</p>
+                            <span class="text-md text-gray-500">₹ 100</span>
                         </div>
-                        <div class="bg-gray-100 p-4 rounded-lg">
+                        <div x-data @click="window.location.href = './tomato.html'" class="bg-[#e4e7eb] p-4 rounded-lg hover:cursor-pointer">
                             <img src="./img/homebg3.jpg" alt="Petticoat">
-                            <p>Jacket</p>
-                            <span class="text-sm text-gray-500">$20</span>
+                            <p class="pt-4">TOMATOS</p>
+                            <span class="text-md text-gray-500">₹ 100</span>
                         </div>
                     </div>
                 </div>
@@ -136,82 +136,133 @@
                         x-transition:leave-end="transform opacity-0 scale-95"
                         class="md:flex-row space-y-2 md:space-y-0 md:space-x-8 space-y-4 p-4">
                         <ul class="flex justify-center space-x-4 items-center">
-                            <li :class="{ 'border-b-2 border-blue-500': tab === 'tab-1' }" class="cursor-pointer" @click="tab = 'tab-1'">Dry
-                                Fruits</li>
-                            <li :class="{ 'border-b-2 border-blue-500': tab === 'tab-2' }" class="cursor-pointer" @click="tab = 'tab-2'">Spices
+                            <li :class="{ 'border-b-2 border-blue-500': tab === 'tab-1' }" class="cursor-pointer" @click="tab = 'tab-1'">Apples
                             </li>
-                            <li :class="{ 'border-b-2 border-blue-500': tab === 'tab-3' }" class="cursor-pointer" @click="tab = 'tab-3'">
-                                Chocolates</li>
-                            <li :class="{ 'border-b-2 border-blue-500': tab === 'tab-4' }" class="cursor-pointer" @click="tab = 'tab-4'">Sweets
+                            <li :class="{ 'border-b-2 border-blue-500': tab === 'tab-2' }" class="cursor-pointer" @click="tab = 'tab-2'">Bananas
+                            </li>
+                            <li :class="{ 'border-b-2 border-blue-500': tab === 'tab-3' }" class="cursor-pointer" @click="tab = 'tab-3'">Cereal
+                            </li>
+                            <li :class="{ 'border-b-2 border-blue-500': tab === 'tab-4' }" class="cursor-pointer" @click="tab = 'tab-4'">Dairy
                             </li>
                             <li class="cursor-pointer" @click="showMore = !showMore">
                                 <span x-text="showMore ? 'Less' : 'More'"></span>
                             </li>
                         </ul>
                         <ul x-show="showMore" class="flex flex-wrap justify-center space-x-8 items-center sm:p-2">
-                            <li :class="{ 'border-b-2 border-blue-500': tab === 'tab-5' }" class="cursor-pointer" @click="tab = 'tab-5'">Honey
+                            <li :class="{ 'border-b-2 border-blue-500': tab === 'tab-5' }" class="cursor-pointer" @click="tab = 'tab-5'">Eggs
                             </li>
-                            <li :class="{ 'border-b-2 border-blue-500': tab === 'tab-6' }" class="cursor-pointer" @click="tab = 'tab-6'">Bakery
+                            <li :class="{ 'border-b-2 border-blue-500': tab === 'tab-6' }" class="cursor-pointer" @click="tab = 'tab-6'">Flour
                             </li>
-                            <li :class="{ 'border-b-2 border-blue-500': tab === 'tab-7' }" class="cursor-pointer" @click="tab = 'tab-7'">Gift
-                                Packs</li>
-                            <li :class="{ 'border-b-2 border-blue-500': tab === 'tab-8' }" class="cursor-pointer" @click="tab = 'tab-8'">Cold
-                                Drinks</li>
+                            <li :class="{ 'border-b-2 border-blue-500': tab === 'tab-7' }" class="cursor-pointer" @click="tab = 'tab-7'">Grapes
+                            </li>
+                            <li :class="{ 'border-b-2 border-blue-500': tab === 'tab-8' }" class="cursor-pointer" @click="tab = 'tab-8'">Honey
+                            </li>
                         </ul>
                         <ul x-show="showMore" class="flex flex-wrap justify-center space-x-8 items-center sm:p-2">
-                            <li :class="{ 'border-b-2 border-blue-500': tab === 'tab-9' }" class="cursor-pointer" @click="tab = 'tab-9'">Cold
-                                Drinks</li>
-                            <li :class="{ 'border-b-2 border-blue-500': tab === 'tab-10' }" class="cursor-pointer" @click="tab = 'tab-10'">Cold
-                                Drinks</li>
-                            <li :class="{ 'border-b-2 border-blue-500': tab === 'tab-11' }" class="cursor-pointer" @click="tab = 'tab-11'">Cold
-                                Drinks</li>
-                            <li :class="{ 'border-b-2 border-blue-500': tab === 'tab-12' }" class="cursor-pointer" @click="tab = 'tab-12'">Cold
-                                Drinks</li>
+                            <li :class="{ 'border-b-2 border-blue-500': tab === 'tab-9' }" class="cursor-pointer" @click="tab = 'tab-9'">Ice
+                                Cream</li>
+                            <li :class="{ 'border-b-2 border-blue-500': tab === 'tab-10' }" class="cursor-pointer" @click="tab = 'tab-10'">Juice
+                            </li>
+                            <li :class="{ 'border-b-2 border-blue-500': tab === 'tab-11' }" class="cursor-pointer" @click="tab = 'tab-11'">
+                                Ketchup</li>
+                            <li :class="{ 'border-b-2 border-blue-500': tab === 'tab-12' }" class="cursor-pointer" @click="tab = 'tab-12'">
+                                Lettuce</li>
                         </ul>
                         <ul x-show="showMore" class="flex flex-wrap justify-center space-x-8 items-center sm:p-2">
-                            <li :class="{ 'border-b-2 border-blue-500': tab === 'tab-13' }" class="cursor-pointer" @click="tab = 'tab-13'">Cold
-                                Drinks</li>
-                            <li :class="{ 'border-b-2 border-blue-500': tab === 'tab-14' }" class="cursor-pointer" @click="tab = 'tab-14'">Cold
-                                Drinks</li>
-                            <li :class="{ 'border-b-2 border-blue-500': tab === 'tab-15' }" class="cursor-pointer" @click="tab = 'tab-15'">Cold
-                                Drinks</li>
+                            <li :class="{ 'border-b-2 border-blue-500': tab === 'tab-13' }" class="cursor-pointer" @click="tab = 'tab-13'">Milk
+                            </li>
+                            <li :class="{ 'border-b-2 border-blue-500': tab === 'tab-14' }" class="cursor-pointer" @click="tab = 'tab-14'">Nuts
+                            </li>
+                            <li :class="{ 'border-b-2 border-blue-500': tab === 'tab-15' }" class="cursor-pointer" @click="tab = 'tab-15'">
+                                Oranges</li>
                         </ul>
+
                         <div x-show="tab === 'tab-1'" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 p-8">
-                            <div class="bg-gray-100 p-4 rounded-lg">
+                            <div x-data @click="window.location.href = './tomato.html'" class="bg-[#e4e7eb] p-4 rounded-lg hover:cursor-pointer">
                                 <img src="./img/homebg3.jpg" alt="Petticoat">
-                                <p>Ladies Wear</p>
-                                <span class="text-sm text-gray-500">$20</span>
+                                <p class="pt-4">TOMATOS</p>
+                                <span class="text-md text-gray-500">₹ 100</span>
                             </div>
-                            <div class="bg-gray-100 p-4 rounded-lg">
+                            <div x-data @click="window.location.href = './tomato.html'" class="bg-[#e4e7eb] p-4 rounded-lg hover:cursor-pointer">
                                 <img src="./img/homebg3.jpg" alt="Petticoat">
-                                <p>Ladies Wear</p>
-                                <span class="text-sm text-gray-500">$20</span>
+                                <p class="pt-4">TOMATOS</p>
+                                <span class="text-md text-gray-500">₹ 100</span>
                             </div>
                         </div>
                         <div x-show="tab === 'tab-2'" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 p-8">
-                            <div class="bg-gray-100 p-4 rounded-lg">
-                                <img src="./img/homebg2.jpg" alt="Petticoat">
-                                <p>Ladies Wear</p>
-                                <span class="text-sm text-gray-500">$20</span>
+                            <div x-data @click="window.location.href = './tomato.html'" class="bg-[#e4e7eb] p-4 rounded-lg hover:cursor-pointer">
+                                <img src="./img/homebg3.jpg" alt="Petticoat">
+                                <p class="pt-4">TOMATOS</p>
+                                <span class="text-md text-gray-500">₹ 100</span>
                             </div>
                         </div>
                         <div x-show="tab === 'tab-3'" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 p-8">
-                            <div class="bg-gray-100 p-4 rounded-lg">
+                            <div x-data @click="window.location.href = './tomato.html'" class="bg-[#e4e7eb] p-4 rounded-lg hover:cursor-pointer">
                                 <img src="./img/homebg3.jpg" alt="Petticoat">
-                                <p>Ladies Wear</p>
-                                <span class="text-sm text-gray-500">$20</span>
+                                <p class="pt-4">TOMATOS</p>
+                                <span class="text-md text-gray-500">₹ 100</span>
                             </div>
                         </div>
                         <div x-show="tab === 'tab-4'" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 p-8">
-                            <div class="bg-gray-100 p-4 rounded-lg">
-                                <img src="./img/homebg1.jpg" alt="Petticoat">
-                                <p>Ladies Wear</p>
-                                <span class="text-sm text-gray-500">$20</span>
+                            <div x-data @click="window.location.href = './tomato.html'" class="bg-[#e4e7eb] p-4 rounded-lg hover:cursor-pointer">
+                                <img src="./img/homebg3.jpg" alt="Petticoat">
+                                <p class="pt-4">TOMATOS</p>
+                                <span class="text-md text-gray-500">₹ 100</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 260">
+                <path fill="#e4e7eb" fill-opacity="1"
+                    d="M0,64L48,80C96,96,192,128,288,144C384,160,480,160,576,176C672,192,768,224,864,224C960,224,1056,192,1152,192C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+            <!-- footer -->
+            <footer class="bg-beige p-6 text-center bg-[#e4e7eb]">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div>
+                        <h2 class="font-bold mb-2">CONTACT US</h2>
+                        <p><i class="fas fa-phone"></i> 91-9137701291</p>
+                        <p><i class="fas fa-envelope"></i> panchalswaraj13@gmail.com</p>
+                    </div>
+                    <div>
+                        <h2 class="font-bold mb-2">INFORMATION</h2>
+                        <ul>
+                            <a href="./about.html">
+                                <li>About Us</li>
+                            </a>
+                            <a href="./products.html">
+                                <li>Our Products</li>
+                            </a>
+                            <a href="./blogs.html">
+                                <li>Blogs</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="font-bold mb-2">SOCIAL MEDIA</h2>
+                        <a href="">
+                            <p><i class="fab fa-instagram"></i> Instagram</p>
+                        </a>
+                    </div>
+                    <div>
+                        <h2 class="font-bold mb-2">CUSTOMER SERVICE</h2>
+                        <ul>
+                            <a href="./contact.html">
+                                <li>Contact Us</li>
+                            </a>
+                            <a href="./locations.html">
+                                <li>Locations</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <p>Powered By Swaraj Panchal © 2024</p>
+                </div>
+            </footer>
         </article>
     </main>
     <script src="./script.js"></script>

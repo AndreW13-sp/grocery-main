@@ -179,3 +179,111 @@ https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15091.779606431786!2d72.83
         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Buy Now</button>
     </div>
 </div>
+
+<section>
+    <div x-show="showNewContent" x-transition:enter="transition ease-out duration-500"
+        x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100"
+        x-transition:leave="transition ease-in duration-500" x-transition:leave-start="transform opacity-100 scale-100"
+        x-transition:leave-end="transform opacity-0 scale-95">
+        <h1 class="text-2xl pt-8 px-2 pl-[4em]">Products related to this
+            item</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 px-8 m-8">
+            <div x-data @click="window.location.href = './tomato.html'"
+                class="bg-[#e4e7eb] p-4 rounded-lg hover:cursor-pointer">
+                <img src="./img/homebg3.jpg" alt="Petticoat">
+                <p class="pt-4">TOMATOS</p>
+                <span class="text-md text-gray-500">₹ 100</span>
+            </div>
+            <div x-data @click="window.location.href = './tomato.html'"
+                class="bg-[#e4e7eb] p-4 rounded-lg hover:cursor-pointer">
+                <img src="./img/homebg3.jpg" alt="Petticoat">
+                <p class="pt-4">TOMATOS</p>
+                <span class="text-md text-gray-500">₹ 100</span>
+            </div>
+            <div x-data @click="window.location.href = './tomato.html'"
+                class="bg-[#e4e7eb] p-4 rounded-lg hover:cursor-pointer">
+                <img src="./img/homebg3.jpg" alt="Petticoat">
+                <p class="pt-4">TOMATOS</p>
+                <span class="text-md text-gray-500">₹ 100</span>
+            </div>
+            <div x-data @click="window.location.href = './tomato.html'"
+                class="bg-[#e4e7eb] p-4 rounded-lg hover:cursor-pointer">
+                <img src="./img/homebg3.jpg" alt="Petticoat">
+                <p class="pt-4">TOMATOS</p>
+                <span class="text-md text-gray-500">₹ 100</span>
+            </div>
+            <button @click="activeSlide = activeSlide === 0 ? slides.length - 1 : activeSlide - 1">Left</button>
+            <button @click="activeSlide = activeSlide === slides.length - 1 ? 0 : activeSlide + 1">Right</button>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div x-show="showNewContent" x-transition:enter="transition ease-out duration-500"
+        x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100"
+        x-transition:leave="transition ease-in duration-500" x-transition:leave-start="transform opacity-100 scale-100"
+        x-transition:leave-end="transform opacity-0 scale-95">
+        <h1 class="text-2xl pt-8 px-2 pl-[4em]">Products related to this
+            item</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 px-8 m-8">
+            <!-- first products -->
+            <div x-data @click="window.location.href = './tomato.html'"
+                class="bg-[#e4e7eb] p-4 rounded-lg hover:cursor-pointer">
+                <img src="./img/homebg3.jpg" alt="Petticoat">
+                <p class="pt-4">TOMATOS</p>
+                <span class="text-md text-gray-500">₹ 100</span>
+            </div>
+            <div x-data @click="window.location.href = './tomato.html'"
+                class="bg-[#e4e7eb] p-4 rounded-lg hover:cursor-pointer">
+                <img src="./img/homebg3.jpg" alt="Petticoat">
+                <p class="pt-4">TOMATOS</p>
+                <span class="text-md text-gray-500">₹ 100</span>
+            </div>
+            <div x-data @click="window.location.href = './tomato.html'"
+                class="bg-[#e4e7eb] p-4 rounded-lg hover:cursor-pointer">
+                <img src="./img/homebg3.jpg" alt="Petticoat">
+                <p class="pt-4">TOMATOS</p>
+                <span class="text-md text-gray-500">₹ 100</span>
+            </div>
+            <div x-data @click="window.location.href = './tomato.html'"
+                class="bg-[#e4e7eb] p-4 rounded-lg hover:cursor-pointer">
+                <img src="./img/homebg3.jpg" alt="Petticoat">
+                <p class="pt-4">TOMATOS</p>
+                <span class="text-md text-gray-500">₹ 100</span>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 px-8 m-8">
+            <!-- second products -->
+            <div x-data @click="window.location.href = './tomato.html'"
+                class="bg-[#e4e7eb] p-4 rounded-lg hover:cursor-pointer">
+                <img src="./img/homebg3.jpg" alt="Petticoat">
+                <p class="pt-4">TOMATOS</p>
+                <span class="text-md text-gray-500">₹ 100</span>
+            </div>
+            <div x-data @click="window.location.href = './tomato.html'"
+                class="bg-[#e4e7eb] p-4 rounded-lg hover:cursor-pointer">
+                <img src="./img/homebg3.jpg" alt="Petticoat">
+                <p class="pt-4">TOMATOS</p>
+                <span class="text-md text-gray-500">₹ 100</span>
+            </div>
+            <div x-data @click="window.location.href = './tomato.html'"
+                class="bg-[#e4e7eb] p-4 rounded-lg hover:cursor-pointer">
+                <img src="./img/homebg3.jpg" alt="Petticoat">
+                <p class="pt-4">TOMATOS</p>
+                <span class="text-md text-gray-500">₹ 100</span>
+            </div>
+            <div x-data @click="window.location.href = './tomato.html'"
+                class="bg-[#e4e7eb] p-4 rounded-lg hover:cursor-pointer">
+                <img src="./img/homebg3.jpg" alt="Petticoat">
+                <p class="pt-4">TOMATOS</p>
+                <span class="text-md text-gray-500">₹ 100</span>
+            </div>
+        </div>
+        <div class="flex justify-center space-x-4 pb-4">
+            <button @click="activeSlide = activeSlide === 0 ? slides.length - 1 : activeSlide - 1"
+                class="w-12 h-12 bg-gray-200 hover:bg-gray-300 text-white font-bold rounded-full"> </button>
+            <button @click="activeSlide = activeSlide === slides.length - 1 ? 0 : activeSlide + 1"
+                class="w-12 h-12 bg-gray-200 hover:bg-gray-300 text-white font-bold rounded-full"></button>
+        </div>
+    </div>
+</section>
